@@ -70,4 +70,19 @@ Host: twitter.com
 
 To get the password you just have to decode the word in base 64.
 
+## Bluetooth - Unknown file 
+Your friend working at NSA recovered an unreadable file from a hacker’s computer. The only thing he knows is that it comes from a communication between a computer and a phone.
+
+The answer is the sha-1 hash of the concatenation of the MAC address (uppercase) and the name of the phone.
+
+Example:
+AB:CD:EF:12:34:56myPhone -> 023cc433c380c2618ed961000a681f1d4c44f8f1
+
+To begin you just start the challenge and it'll download automatically ch18.bin 
+To start, you just have to launch the challenge and it will automatically download ch18.bin after that you open it with wireshark and you will have the following interface
+
+![Capture d'écran](https://media.geeksforgeeks.org/wp-content/uploads/20220812133910/ws.jpg)
+
+At the top you will find wireless and you click on bluetooth devices. Inside you will find the phone's name and its mac address .You take, combine and encode them with a sha-1 encoder to find the password.
+
  
