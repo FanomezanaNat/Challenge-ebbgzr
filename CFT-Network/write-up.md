@@ -8,10 +8,11 @@ The following set of problems deal with network traffic including different prot
 
 Prerequisites:
  - Knowledge of a network capture analyzing tool.
- -Knowlege of the most common network protocols.
+ - Knowlege of the most common network protocols.
 
 ### FTP - authentication
 https://www.root-me.org/en/Challenges/Network/FTP-authentication
+
 An authenticated file exchange achieved through FTP. Recover the password used by the user.
 To begin we must download the file below and run it with wireshark .You will have this interface and then you simply follow the tcp stream
 
@@ -19,7 +20,8 @@ To begin we must download the file below and run it with wireshark .You will hav
 
 ## TELNET - authentication
 https://www.root-me.org/en/Challenges/Network/TELNET-authentication
-Find the user password in this TELNET session capture. the instructions are the same as that of ftp
+
+Find the user password in this TELNET session capture. The instructions are the same as that of ftp
 
 
 ## ETHERNET - frame
@@ -55,8 +57,10 @@ Accept: * */* *
 In the decoded text there will be a base 64 word and you will only have to decode that to get the password.
 
 ## Twitter authentication
+https://www.root-me.org/en/Challenges/Network/Twitter-authentication-101
+
 A twitter authentication session has been captured, you have to retrieve the password.
-Here we come back with the same instructions as ftp and telnet authentication. you download the file and you open it in wireshark and you follow the tcp stream. After you follow tcp stream you'd get this :
+Here we come back with the same instructions as ftp and telnet authentication. You download the file and you open it in wireshark and you follow the tcp stream. After you follow tcp stream you'd get this :
 
 >GET /statuses/replies.xml HTTP/1.1
 User-Agent: CFNetwork/330
@@ -71,6 +75,9 @@ Host: twitter.com
 To get the password you just have to decode the word in base 64.
 
 ## Bluetooth - Unknown file 
+https://www.root-me.org/en/Challenges/Network/Bluetooth-Unknown-file
+
+
 Your friend working at NSA recovered an unreadable file from a hacker’s computer. The only thing he knows is that it comes from a communication between a computer and a phone.
 
 The answer is the sha-1 hash of the concatenation of the MAC address (uppercase) and the name of the phone.
