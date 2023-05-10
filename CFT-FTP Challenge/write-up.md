@@ -1,6 +1,6 @@
 # Root Me
 
-[![N|Solid](https://www.root-me.org/IMG/logo/siteon0.svg?1637496509)](https://www.root-me.org/?page=news&lang=en)
+[![N|Solid](https://www.root-me.org/IMG/logo/siteon0.svg?1637496509)](https://www.root-me.org/en/Challenges/Network/)
 
 ## Network
 Investigate captured traffic, network services and perform packet analysis
